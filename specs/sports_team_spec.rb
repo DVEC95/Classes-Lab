@@ -26,4 +26,9 @@ class TestSportsTeam < MiniTest::Test
     @team_1.coach = 'New Coach'
     assert_equal('New Coach', @team_1.coach)
   end
+
+  def test_add_new_player
+    add_new_player = 'Player 3'
+    assert_equal(2, @team_1.players.length)
+  end
 end
