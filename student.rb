@@ -25,7 +25,7 @@ class CodeClanStudent
     "#{@name} can talk."
   end
 
- #  def say_favourite_language
- #    "I love #{@fav_lang}"
- # end
+  def say_favourite_language
+    "I love #{@fav_lang}"
+  end
 end
