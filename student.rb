@@ -17,10 +17,10 @@ class CodeClanStudent
     @name = name
   end
 
- #  def set_cohort(cohort)
- #    @cohort = cohort
- #  end
- #
+  def set_cohort(cohort)
+    @cohort = cohort
+  end
+
  #  def talk
  #    "#{@name} can talk."
  #  end
