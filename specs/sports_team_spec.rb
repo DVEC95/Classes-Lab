@@ -40,5 +40,12 @@ class TestSportsTeam < MiniTest::Test
     assert_nil(@team_1.find_player('Player 4'))
   end
 
+  def test_points_total__win
+    assert_equal(1, @team_1.points_total('win'))
+  end
+
+  def test_points_total__lose
+    assert_equal(0, @team_1.points_total('lose'))
+  end
 
 end

@@ -6,6 +6,7 @@ class SportsTeam
     @team_name = team_name
     @players = players
     @coach = coach
+    @points = 0
   end
 
   def add_new_player(new_player)
@@ -19,6 +20,14 @@ class SportsTeam
       end
     end
     return nil
+  end
+
+  def points_total(result)
+    if result == 'win'
+      @points += 1
+    else
+      @points = @points
+    end
   end
 
 end
