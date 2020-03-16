@@ -32,8 +32,12 @@ class TestSportsTeam < MiniTest::Test
     assert_equal(3, @team_1.players.length)
   end
 
-  def test_find_player_found
-    assert_equal("Found Player 2.", @team_1.find_player("Player 2"))
+  def test_find_player__found
+    assert_equal('Found Player 2.', @team_1.find_player('Player 2'))
+  end
+
+  def test_find_player__not_found
+    assert_nil(@team_1.find_player('Player 4'))
   end
 
 
