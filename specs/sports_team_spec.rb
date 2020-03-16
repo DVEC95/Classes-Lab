@@ -3,6 +3,8 @@ require('minitest/reporters')
 
 require_relative('../sports_team.rb')
 
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
+
 class TestSportsTeam < MiniTest::Test
   def setup
     @team_1 = SportsTeam.new("Team 1", ["Player 1", "Player 2"], "Coach")
@@ -19,5 +21,14 @@ class TestSportsTeam < MiniTest::Test
   def test_get_coach
     assert_equal("Coach", @team_1.get_coach)
   end
-  
+
+  def test_set_coach
+    @team_1.set_coach("New Coach")
+    assert_equal("New Coach", @team_1.get_coach)
+  end
+
+
+
+
+
 end

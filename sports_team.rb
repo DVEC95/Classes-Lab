@@ -17,6 +17,11 @@ class SportsTeam
     return @coach
   end
 
+  def set_coach(new_coach)
+    @coach = new_coach
+  end
+
+
 
 
 
