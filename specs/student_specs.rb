@@ -16,11 +16,11 @@ class TestCodeClanStudent < MiniTest::Test
     assert_equal('G18', @codeclanstudent.get_cohort)
   end
 
-  # def test_set_name
-  #   @codeclanstudent.set_name('Eddie')
-  #   assert_equal('Eddie', @codeclanstudent.get_name)
-  # end
-  #
+  def test_set_name
+    @codeclanstudent.set_name('Eddie')
+    assert_equal('Eddie', @codeclanstudent.get_name)
+  end
+
   # def test_set_cohort
   #   @codeclanstudent.set_cohort('E30')
   #   assert_equal('E30', @codeclanstudent.get_cohort)
