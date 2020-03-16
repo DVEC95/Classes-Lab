@@ -12,4 +12,13 @@ class SportsTeam
     @players << new_player
   end
 
+  def find_player(player_name)
+    for player in @players
+      if player_name == player
+        return "Found #{player_name}."
+      end
+    end
+    return nil
+  end
+
 end

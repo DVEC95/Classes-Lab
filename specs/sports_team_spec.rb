@@ -31,4 +31,10 @@ class TestSportsTeam < MiniTest::Test
     @team_1.add_new_player('Player 3')
     assert_equal(3, @team_1.players.length)
   end
+
+  def test_find_player_found
+    assert_equal("Found Player 2.", @team_1.find_player("Player 2"))
+  end
+
+
 end
