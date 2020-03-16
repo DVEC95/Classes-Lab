@@ -21,10 +21,10 @@ class CodeClanStudent
     @cohort = cohort
   end
 
- #  def talk
- #    "#{@name} can talk."
- #  end
- #
+  def talk
+    "#{@name} can talk."
+  end
+
  #  def say_favourite_language
  #    "I love #{@fav_lang}"
  # end

@@ -26,10 +26,10 @@ class TestCodeClanStudent < MiniTest::Test
     assert_equal('E30', @codeclanstudent.get_cohort)
   end
 
-  # def test_talk
-  #   assert_equal('Jimmy can talk.', @codeclanstudent.talk)
-  # end
-  #
+  def test_talk
+    assert_equal('Jimmy can talk.', @codeclanstudent.talk)
+  end
+
   # def test_favourite_languge
   #   assert_equal('I love Ruby', @codeclanstudent.say_favourite_language)
   # end
