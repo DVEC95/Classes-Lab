@@ -5,10 +5,10 @@ class CodeClanStudent
     @fav_lang = fav_prog_language
   end
 
- #  def get_name
- #    @name
- #  end
- #
+  def get_name
+    @name
+  end
+
  #  def get_cohort
  #    @cohort
  #  end
