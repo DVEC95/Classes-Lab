@@ -9,10 +9,10 @@ class CodeClanStudent
     @name
   end
 
- #  def get_cohort
- #    @cohort
- #  end
- #
+  def get_cohort
+    @cohort
+  end
+
  #  def set_name(name)
  #    @name = name
  #  end
