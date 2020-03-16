@@ -5,6 +5,9 @@ class SportsTeam
     @coach = coach
   end
 
+  def get_team_name
+    return @team_name
+  end
 
 
 
