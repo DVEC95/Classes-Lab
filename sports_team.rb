@@ -24,7 +24,7 @@ class SportsTeam
 
   def points_total(result)
     if result == 'win'
-      @points += 1
+      @points += 3
     else
       @points = @points
     end
